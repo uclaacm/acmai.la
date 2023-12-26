@@ -1,37 +1,24 @@
 * {
 	margin: 0;
 	border: 0;
-	font-family: Ubuntu, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Poppins';
 }
 
 html,
 body {
 	width: 100%;
-	height: 100%;
+	height: 100%;	
 	padding: 0;
 	margin: 0;
 }
 
 :root {
 	--primary: #28b2ff;
-
-	--pallete1: #80ffdb;
-	--pallete2: #72efdd;
-	--pallete3: #64dfdf;
-	--pallete4: #56cfe1;
-	--pallete5: #48bfe3;
-	--pallete6: #4ea8de;
-	--pallete7: #5390d9;
-	--pallete8: #5e60ce;
-	--pallete9: #6930c3;
-	--pallete10: #7400b8;
-
-	// --pallete1: #caf0f8;
-	// --pallete2: #ade8f4;
-	// --pallete3: #90e0ef;
-	// --pallete4: #48cae4;
-	// --pallete5: #00b4d8;
-	// --pallete6: #0077b6;
-	// --pallete7: #023e8a;
-	// --pallete8: #03045e;
+	--accent: #FF699F;
+	--secondaryLight: #35DDF3;
+	--secondaryDark: #132BD1;
+	--gradientLight:  #2FE6FF;
 }

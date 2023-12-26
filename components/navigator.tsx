@@ -53,9 +53,10 @@ export default function Navigator() {
 	return (
 		<>
 			<div className={styles.headerContainer}>
-				<span className={styles.aiIcon} />
-				<Link href="/" className={styles.aiText}>
-					acm.AI
+				<Link href="/" className={styles.homeLink}>
+					<span className={styles.aiIcon} />
+					<p className={styles.acmText}>acm.</p>
+					<p className={styles.aiText}>ai</p>
 				</Link>
 
 				<div className={styles.dropDownIcon} onClick={toggleAnimation}>

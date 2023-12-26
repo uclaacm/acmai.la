@@ -1,10 +1,12 @@
+@import url('https://cdn.jsdelivr.net/gh/uclaacm/westwood_sans/font.css');
+
 .headerContainer {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	width: 100lvw;
 	height: 10lvh;
-	background: var(--pallete3);
+	background: whitesmoke;
 
 	width: 100%;
 	text-align: center;
@@ -13,28 +15,37 @@
 	justify-content: space-between;
 }
 
-.aiIcon {
+.homeLink {
+	display: flex;
+	font-family: 'Westwood Sans', sans-serif;
+	font-weight: 800;
+	font-size: 40px;
+	color: black;
+	text-decoration: none;
+	margin-right: auto;
 	margin-left: 1lvw;
+}
+
+.aiIcon {
 	width: 10lvh;
 	height: auto;
 	background-image: url('../public/aiIcon.svg');
 	background-size: cover;
 }
 
-.aiText {
-	margin-right: auto;
+.acmText {
 	margin-left: 1lvw;
-	-webkit-text-stroke: 0.5px black;
-	font-size: 40px;
-	font-weight: 800;
+}
+
+.aiText {
 	text-decoration: none;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
-	background-image: linear-gradient(60deg, black, var(--pallete8));
+	background-image: linear-gradient(70deg, var(--primary) 25%, var(--gradientLight) 75%);
 }
 
 .aiText:hover {
-	background-image: linear-gradient(60deg, #0096c7, #ade8f4);
+	background-image: linear-gradient(70deg, black 1%, var(--accent) 99%);
 }
 
 @media only screen and (min-width: 800px) {
@@ -43,6 +54,7 @@
 	}
 
   .joinButton {
+		font-family: 'Poppins';
 		margin: 0px 1lvw;
 		cursor: pointer;
 		padding: 5px 20px;
@@ -57,8 +69,8 @@
 
 	.joinButton:hover {
 		background-color: rgb(255, 255, 255);
-		color: var(--pallete8);
-		border: 2px solid var(--pallete8);
+		color: var(--accent);
+		border: 2px solid var(--accent);
 	}
 
   .dropDownMenuInvisible{
@@ -70,6 +82,7 @@
   }
 
 	.linkText {
+		font-family: 'Poppins';
 		font-weight: 500;
 		font-size: 25px;
 		color: black;
@@ -78,7 +91,7 @@
 	}
 
 	.linkText:hover {
-		color: var(--pallete8);
+		color: var(--accent);
 	}
 
 }
@@ -106,6 +119,7 @@
 	}
 
 	.linkText {
+		font-family: 'Poppins';
 		line-height: 7lvh;
 		text-align: center;
 		font-weight: 500;
@@ -115,7 +129,7 @@
 	}
 
 	.linkText:hover {
-		background-color: var(--pallete1);
+		background-color: var(--accent);
 	}
 
 	.bar1,
