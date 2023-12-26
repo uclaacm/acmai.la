@@ -1,0 +1,211 @@
+.headerContainer {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	width: 100lvw;
+	height: 10lvh;
+	background: var(--pallete3);
+
+	width: 100%;
+	text-align: center;
+	line-height: 10lvh;
+	display: flex;
+	justify-content: space-between;
+}
+
+.aiIcon {
+	margin-left: 1lvw;
+	width: 10lvh;
+	height: auto;
+	background-image: url('../public/aiIcon.svg');
+	background-size: cover;
+}
+
+.aiText {
+	margin-right: auto;
+	margin-left: 1lvw;
+	-webkit-text-stroke: 0.5px black;
+	font-size: 40px;
+	font-weight: 800;
+	text-decoration: none;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	background-image: linear-gradient(60deg, black, var(--pallete8));
+}
+
+.aiText:hover {
+	background-image: linear-gradient(60deg, #0096c7, #ade8f4);
+}
+
+@media only screen and (min-width: 800px) {
+	.dropDownIcon {
+		display: none;
+	}
+
+  .joinButton {
+		margin: 0px 1lvw;
+		cursor: pointer;
+		padding: 5px 20px;
+		text-decoration: none;
+		font-size: 25px;
+		background-color: white;
+		color: var(--primary);
+		text-align: center;
+		border: 2px solid var(--primary);
+		border-radius: 20px;
+	}
+
+	.joinButton:hover {
+		background-color: rgb(255, 255, 255);
+		color: var(--pallete8);
+		border: 2px solid var(--pallete8);
+	}
+
+  .dropDownMenuInvisible{
+    display: none;
+  }
+
+	.dropDownMenuVisible{
+    display: none;
+  }
+
+	.linkText {
+		font-weight: 500;
+		font-size: 25px;
+		color: black;
+		text-decoration: none;
+		margin: 0px 1lvw;
+	}
+
+	.linkText:hover {
+		color: var(--pallete8);
+	}
+
+}
+
+// when screen is too small switch to drop down navigation menu
+@media only screen and (max-width: 800px) {
+  // make menu invisible
+	.staticMenu {
+		display: none;
+	}
+
+  .dropDownMenuInvisible{
+    display: none;
+  }
+
+  .dropDownMenuVisible{
+    display: flex;
+    flex-direction: column;
+  }
+
+	.dropDownIcon {
+		cursor: pointer;
+		display: inline-block;
+    margin: auto 3lvw;
+	}
+
+	.linkText {
+		line-height: 7lvh;
+		text-align: center;
+		font-weight: 500;
+		font-size: 20px;
+		color: black;
+		text-decoration: none;
+	}
+
+	.linkText:hover {
+		background-color: var(--pallete1);
+	}
+
+	.bar1,
+	.bar2,
+	.bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: black;
+		margin: 6px 0;
+		border-radius: 20px;
+	}
+
+  // close menu styles
+  .closeBar1 {
+    @extend .bar1;
+    animation: closeBar1 .5s forwards;
+  }
+
+  .closeBar2 {
+    @extend .bar2;
+    animation: closeBar2 .5s forwards;
+  }
+
+  .closeBar3 {
+    @extend .bar3;
+    animation: closeBar3 .5s forwards;
+  }
+
+  // closing menu animations
+  @keyframes closeBar1 {
+    0% {
+      transform: translate(0, 11px) rotate(135deg);
+    }
+    100% {
+      translate: translate(0, -11px) rotate(-135deg);
+    }
+  }
+
+  @keyframes closeBar2 {
+    0% {
+      opacity: 0;
+      transform: translate(-35px, 0);
+    }
+    100% {
+      opacity: 100;
+      transform: translate(0px, 0);
+    }
+  }
+
+  @keyframes closeBar3 {
+    0% {
+      transform: translate(0, -11px) rotate(-135deg);
+    }
+    100% {
+      translate: translate(0, 11px) rotate(135deg);
+    }
+  }
+
+  // open menu styles
+	.openBar1 {
+		@extend .bar1;
+    animation: openBar1 .5s forwards;
+	}
+
+	.openBar2 {
+		@extend .bar2;
+		animation: openBar2 .5s forwards;
+	}
+
+	.openBar3 {
+		@extend .bar3;
+		animation: openBar3 .5s forwards;
+	}
+
+  // opening menu animations
+  @keyframes openBar1 {
+    100% {
+      transform: translate(0, 11px) rotate(135deg);
+    }
+  }
+
+  @keyframes openBar2 {
+    100% {
+      opacity: 0;
+      transform: translate(-35px, 0);
+    }
+  }
+
+  @keyframes openBar3 {
+    100% {
+    transform: translate(0, -11px) rotate(-135deg);}
+  }
+}
