@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../styles/navigator.module.scss';
+import styles from '@/styles/navigator.module.scss';
 import { MouseEventHandler } from 'react';
 import React, { useState } from 'react';
 
