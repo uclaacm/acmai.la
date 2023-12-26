@@ -1,9 +1,12 @@
 @import url('https://cdn.jsdelivr.net/gh/uclaacm/westwood_sans/font.css');
 
-.headerContainer {
+.navigationContainer {
+	top: 0;
 	position: -webkit-sticky;
 	position: sticky;
-	top: 0;
+}
+
+.headerContainer {
 	width: 100lvw;
 	height: 10lvh;
 	background: whitesmoke;
@@ -29,7 +32,7 @@
 .aiIcon {
 	width: 10lvh;
 	height: auto;
-	background-image: url('../public/aiIcon.svg');
+	background-image: url('../public/logos/aiIcon.svg');
 	background-size: cover;
 }
 

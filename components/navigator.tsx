@@ -52,36 +52,38 @@ export default function Navigator() {
 
 	return (
 		<>
-			<div className={styles.headerContainer}>
-				<Link href="/" className={styles.homeLink}>
-					<span className={styles.aiIcon} />
-					<p className={styles.acmText}>acm.</p>
-					<p className={styles.aiText}>ai</p>
-				</Link>
+			<div className={styles.navigationContainer}>
+				<div className={styles.headerContainer}>
+					<Link href="/" className={styles.homeLink}>
+						<span className={styles.aiIcon} />
+						<p className={styles.acmText}>acm.</p>
+						<p className={styles.aiText}>ai</p>
+					</Link>
 
-				<div className={styles.dropDownIcon} onClick={toggleAnimation}>
-					<div className={styles.bar1} id="bar1" />
-					<div className={styles.bar2} id="bar2" />
-					<div className={styles.bar3} id="bar3" />
+					<div className={styles.dropDownIcon} onClick={toggleAnimation}>
+						<div className={styles.bar1} id="bar1" />
+						<div className={styles.bar2} id="bar2" />
+						<div className={styles.bar3} id="bar3" />
+					</div>
+
+					<div className={styles.staticMenu}>
+						{basicLinks}
+						<Link href="/join" className={styles.linkText}>
+							<button className={styles.joinButton}>JOIN US</button>
+						</Link>
+					</div>
 				</div>
 
-				<div className={styles.staticMenu}>
+				<div className={styles.dropDownMenuInvisible} id="dropDownMenu">
 					{basicLinks}
-					<Link href="/join" className={styles.linkText}>
-						<button className={styles.joinButton}>JOIN US</button>
+					<Link
+						href="/join"
+						className={styles.linkText}
+						onClick={toggleAnimation}
+					>
+						JOIN US
 					</Link>
 				</div>
-			</div>
-
-			<div className={styles.dropDownMenuInvisible} id="dropDownMenu">
-				{basicLinks}
-				<Link
-					href="/join"
-					className={styles.linkText}
-					onClick={toggleAnimation}
-				>
-					JOIN US
-				</Link>
 			</div>
 		</>
 	);
