@@ -2,10 +2,11 @@
   bottom: 0;
   height: 25lvh;
   position: relative;
-  background-color: var(--primary);
   z-index: -5;
   display: flex;
   justify-content: center;
+
+  background: linear-gradient(70deg, var(--primary), var(--gradientLight));
 }
 
 .socialIconContainer {
@@ -26,7 +27,7 @@
 
 .gmailIcon {
   @extend .socialIcons;
-  transform: scale(1.15) translate(1.5%);
+  transform: scale(1.1) translate(1%);
 }
 
 .discordIcon {
