@@ -1,16 +1,16 @@
-import Link from 'next/link';
-import styles from '@/styles/navigator.module.scss';
-import { MouseEventHandler } from 'react';
-import React, { useState } from 'react';
+import Link from "next/link";
+import styles from "@/styles/navigator.module.scss";
+import { MouseEventHandler } from "react";
+import React, { useState } from "react";
 
 export default function Navigator() {
 	const [menuIsToggled, setMenuIsToggled] = useState<boolean>(false);
 
 	let toggleAnimation: MouseEventHandler = (event) => {
-		let bar1 = document.getElementById('bar1');
-		let bar2 = document.getElementById('bar2');
-		let bar3 = document.getElementById('bar3');
-		let dropDownMenu = document.getElementById('dropDownMenu');
+		let bar1 = document.getElementById("bar1");
+		let bar2 = document.getElementById("bar2");
+		let bar3 = document.getElementById("bar3");
+		let dropDownMenu = document.getElementById("dropDownMenu");
 
 		if (bar1! && bar2! && bar3! && dropDownMenu!) {
 			if (menuIsToggled) {
@@ -30,6 +30,9 @@ export default function Navigator() {
 
 	let basicLinks = (
 		<>
+			<Link href="/about" className={styles.linkText} onClick={toggleAnimation}>
+				ABOUT
+			</Link>
 			<Link
 				href="/events"
 				className={styles.linkText}
@@ -37,15 +40,8 @@ export default function Navigator() {
 			>
 				EVENTS
 			</Link>
-			<Link href="/about" className={styles.linkText} onClick={toggleAnimation}>
-				ABOUT
-			</Link>
-			<Link
-				href="/officers"
-				className={styles.linkText}
-				onClick={toggleAnimation}
-			>
-				OFFICERS
+			<Link href="/blog" className={styles.linkText} onClick={toggleAnimation}>
+				BLOG
 			</Link>
 		</>
 	);

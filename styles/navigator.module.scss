@@ -1,5 +1,7 @@
 @import url('https://cdn.jsdelivr.net/gh/uclaacm/westwood_sans/font.css');
 
+$headerFontSize: 20px;
+
 .navigationContainer {
 	top: 0;
 	position: -webkit-sticky;
@@ -8,12 +10,13 @@
 
 .headerContainer {
 	width: 100lvw;
-	height: 10lvh;
-	background: whitesmoke;
+	height: 8lvh;
+	background: white;
+	box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 
 	width: 100%;
 	text-align: center;
-	line-height: 10lvh;
+	line-height: 8lvh;
 	display: flex;
 	justify-content: space-between;
 }
@@ -30,25 +33,27 @@
 }
 
 .aiIcon {
-	width: 10lvh;
+	width: 8lvh;
 	height: auto;
 	background-image: url('../public/logos/aiIcon.svg');
 	background-size: cover;
 }
 
 .acmText {
+	line-height: 7lvh;
 	margin-left: 1lvw;
 }
 
 .aiText {
+	line-height: 7lvh;
 	text-decoration: none;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
-	background-image: linear-gradient(70deg, var(--primary) 25%, var(--gradientLight) 75%);
-}
-
-.aiText:hover {
-	background-image: linear-gradient(70deg, black 1%, var(--accent) 99%);
+	background-image: linear-gradient(
+		70deg,
+		var(--primary) 25%,
+		var(--gradientLight) 75%
+	);
 }
 
 @media only screen and (min-width: 800px) {
@@ -56,13 +61,13 @@
 		display: none;
 	}
 
-  .joinButton {
-		font-family: 'Poppins';
+	.joinButton {
+		font-weight: 400;
 		margin: 0px 1lvw;
 		cursor: pointer;
 		padding: 5px 20px;
 		text-decoration: none;
-		font-size: 25px;
+		font-size: $headerFontSize;
 		background-color: white;
 		color: var(--primary);
 		text-align: center;
@@ -76,18 +81,17 @@
 		border: 2px solid var(--accent);
 	}
 
-  .dropDownMenuInvisible{
-    display: none;
-  }
+	.dropDownMenuInvisible {
+		display: none;
+	}
 
-	.dropDownMenuVisible{
-    display: none;
-  }
+	.dropDownMenuVisible {
+		display: none;
+	}
 
 	.linkText {
-		font-family: 'Poppins';
-		font-weight: 500;
-		font-size: 25px;
+		font-weight: 400;
+		font-size: $headerFontSize;
 		color: black;
 		text-decoration: none;
 		margin: 0px 1lvw;
@@ -96,37 +100,35 @@
 	.linkText:hover {
 		color: var(--accent);
 	}
-
 }
 
 // when screen is too small switch to drop down navigation menu
 @media only screen and (max-width: 800px) {
-  // make menu invisible
+	// make menu invisible
 	.staticMenu {
 		display: none;
 	}
 
-  .dropDownMenuInvisible{
-    display: none;
-  }
+	.dropDownMenuInvisible {
+		display: none;
+	}
 
-  .dropDownMenuVisible{
-    display: flex;
-    flex-direction: column;
-  }
+	.dropDownMenuVisibpropertyle {
+		display: flex;
+		flex-direction: column;
+	}
 
 	.dropDownIcon {
 		cursor: pointer;
 		display: inline-block;
-    margin: auto 3lvw;
+		margin: auto 3lvw;
 	}
 
 	.linkText {
-		font-family: 'Poppins';
-		line-height: 7lvh;
+		line-height: 2lvh;
 		text-align: center;
 		font-weight: 500;
-		font-size: 20px;
+		font-size: 15px;
 		color: black;
 		text-decoration: none;
 	}
@@ -145,84 +147,85 @@
 		border-radius: 20px;
 	}
 
-  // close menu styles
-  .closeBar1 {
-    @extend .bar1;
-    animation: closeBar1 .5s forwards;
-  }
+	// close menu styles
+	.closeBar1 {
+		@extend .bar1;
+		animation: closeBar1 0.5s forwards;
+	}
 
-  .closeBar2 {
-    @extend .bar2;
-    animation: closeBar2 .5s forwards;
-  }
+	.closeBar2 {
+		@extend .bar2;
+		animation: closeBar2 0.5s forwards;
+	}
 
-  .closeBar3 {
-    @extend .bar3;
-    animation: closeBar3 .5s forwards;
-  }
+	.closeBar3 {
+		@extend .bar3;
+		animation: closeBar3 0.5s forwards;
+	}
 
-  // closing menu animations
-  @keyframes closeBar1 {
-    0% {
-      transform: translate(0, 11px) rotate(135deg);
-    }
-    100% {
-      translate: translate(0, -11px) rotate(-135deg);
-    }
-  }
+	// closing menu animations
+	@keyframes closeBar1 {
+		0% {
+			transform: translate(0, 11px) rotate(135deg);
+		}
+		100% {
+			translate: translate(0, -11px) rotate(-135deg);
+		}
+	}
 
-  @keyframes closeBar2 {
-    0% {
-      opacity: 0;
-      transform: translate(-35px, 0);
-    }
-    100% {
-      opacity: 100;
-      transform: translate(0px, 0);
-    }
-  }
+	@keyframes closeBar2 {
+		0% {
+			opacity: 0;
+			transform: translate(-35px, 0);
+		}
+		100% {
+			opacity: 100;
+			transform: translate(0px, 0);
+		}
+	}
 
-  @keyframes closeBar3 {
-    0% {
-      transform: translate(0, -11px) rotate(-135deg);
-    }
-    100% {
-      translate: translate(0, 11px) rotate(135deg);
-    }
-  }
+	@keyframes closeBar3 {
+		0% {
+			transform: translate(0, -11px) rotate(-135deg);
+		}
+		100% {
+			translate: translate(0, 11px) rotate(135deg);
+		}
+	}
 
-  // open menu styles
+	// open menu styles
 	.openBar1 {
 		@extend .bar1;
-    animation: openBar1 .5s forwards;
+		animation: openBar1 0.5s forwards;
 	}
 
 	.openBar2 {
 		@extend .bar2;
-		animation: openBar2 .5s forwards;
+		animation: openBar2 0.5s forwards;
 	}
 
 	.openBar3 {
 		@extend .bar3;
-		animation: openBar3 .5s forwards;
+		animation: openBar3 0.5s forwards;
 	}
 
-  // opening menu animations
-  @keyframes openBar1 {
-    100% {
-      transform: translate(0, 11px) rotate(135deg);
-    }
-  }
+	// opening menu animations
+	@keyframes openBar1 {
+		100% {
+			transform: translate(0, 11px) rotate(135deg);
+		}
+	}
 
-  @keyframes openBar2 {
-    100% {
-      opacity: 0;
-      transform: translate(-35px, 0);
-    }
-  }
+	@keyframes openBar2 {
+		100% {
+			opacity: 0;
+			transform: translate(-35px, 0);
+		}
+	}
 
-  @keyframes openBar3 {
-    100% {
-    transform: translate(0, -11px) rotate(-135deg);}
-  }
+	@keyframes openBar3 {
+		100% {
+			transform: translate(0, -11px) rotate(-135deg);
+		}
+	}
 }

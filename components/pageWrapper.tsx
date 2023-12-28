@@ -1,7 +1,7 @@
-import Footer from './footer';
-import Navigator from './navigator';
+import Footer from "./footer";
+import Navigator from "./navigator";
 
-import styles from '@/styles/pageWrapper.module.scss';
+import styles from "@/styles/pageWrapper.module.scss";
 
 export default function PageWrapper({
 	children,
@@ -10,11 +10,9 @@ export default function PageWrapper({
 }) {
 	return (
 		<>
-			<div className={styles.container}>
-				<Navigator />
-				<div className={styles.spacer}></div>
-				<Footer />
-			</div>
+			<Navigator />
+			<div className={styles.bodyContainer}></div>
+			<Footer />
 		</>
 	);
 }

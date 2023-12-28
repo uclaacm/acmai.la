@@ -1,51 +1,50 @@
 .footerContainer {
-  bottom: 0;
-  height: 25lvh;
-  position: relative;
-  z-index: -5;
-  display: flex;
-  justify-content: center;
-
-  background: linear-gradient(70deg, var(--primary), var(--gradientLight));
+	bottom: 0;
+	height: 25lvh;
+	position: relative;
+	z-index: -5;
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(70deg, var(--primary), var(--gradientLight));
 }
 
 .socialIconContainer {
-  position: relative;
-  top: 20%;
-  height: 50px;
-  width: auto;
+	position: relative;
+	top: 20%;
+	height: 50px;
+	width: auto;
 }
 
 .socialText {
-  text-align: center;
+	text-align: center;
 }
 
 .socialIcons {
-  width: 50px;
-  height: 50px;
+	width: 50px;
+	height: 50px;
 }
 
 .gmailIcon {
-  @extend .socialIcons;
-  transform: scale(1.1) translate(1%);
+	@extend .socialIcons;
+	transform: scale(1.1) translate(1%);
 }
 
 .discordIcon {
-  @extend .socialIcons;
-  transform: scale(1.4) translate(4%);
+	@extend .socialIcons;
+	transform: scale(1.4) translate(4%);
 }
 
 .socialIcons:hover {
-  --iconColor: var(--accent);
+	--iconColor: var(--accent);
 }
 
 .socialLinks {
-  margin: 0 .5lvw;
-  width: 50px;
-  height: 50px;
+	margin: 0 0.5lvw;
+	width: 50px;
+	height: 50px;
 }
 
 .discordLink {
-  @extend .socialLinks;
-  width: 55px;
+	@extend .socialLinks;
+	width: 55px;
 }

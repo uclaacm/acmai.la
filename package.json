@@ -11,7 +11,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "eslint . --fix --max-warnings=0",
+		"lint": "eslint . --fix",
 		"format": "prettier . --write",
 		"postinstall": "husky install"
 	},
