@@ -36,8 +36,7 @@ export default function Navigator() {
 			<Link
 				href="/events"
 				className={styles.linkText}
-				onClick={toggleAnimation}
-			>
+				onClick={toggleAnimation}>
 				EVENTS
 			</Link>
 			<Link href="/blog" className={styles.linkText} onClick={toggleAnimation}>
@@ -75,8 +74,7 @@ export default function Navigator() {
 					<Link
 						href="/join"
 						className={styles.linkText}
-						onClick={toggleAnimation}
-					>
+						onClick={toggleAnimation}>
 						JOIN US
 					</Link>
 				</div>

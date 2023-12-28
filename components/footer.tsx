@@ -1,4 +1,4 @@
-import styles from '@/styles/footer.module.scss';
+import styles from "@/styles/footer.module.scss";
 
 export default function Footer() {
 	return (
@@ -9,8 +9,7 @@ export default function Footer() {
 					<a
 						href="https://discord.com/invite/QcU9AVW9hm"
 						target="_blank"
-						className={styles.discordLink}
-					>
+						className={styles.discordLink}>
 						<svg className={styles.discordIcon}>
 							<use href="sprites.svg#discordIcon" />
 						</svg>
@@ -19,8 +18,7 @@ export default function Footer() {
 					<a
 						href="https://www.instagram.com/acm.ai.ucla/"
 						target="_blank"
-						className={styles.socialLinks}
-					>
+						className={styles.socialLinks}>
 						<svg className={styles.socialIcons}>
 							<use href="sprites.svg#instagramIcon" />
 						</svg>
@@ -29,8 +27,7 @@ export default function Footer() {
 					<a
 						href="https://open.spotify.com/show/13gJahs83FHFBnRpexBWrW"
 						target="_blank"
-						className={styles.socialLinks}
-					>
+						className={styles.socialLinks}>
 						<svg className={styles.socialIcons}>
 							<use href="sprites.svg#spotifyIcon" />
 						</svg>
@@ -39,8 +36,7 @@ export default function Footer() {
 					<a
 						href="https://www.facebook.com/groups/uclaacmai/"
 						target="_blank"
-						className={styles.socialLinks}
-					>
+						className={styles.socialLinks}>
 						<svg className={styles.socialIcons}>
 							<use href="sprites.svg#facebookIcon" />
 						</svg>
@@ -49,8 +45,7 @@ export default function Footer() {
 					<a
 						href="mailto:ucla.acm.ai@gmail.com"
 						target="_blank"
-						className={styles.socialLinks}
-					>
+						className={styles.socialLinks}>
 						<svg className={styles.gmailIcon}>
 							<use href="sprites.svg#gmailIcon" />
 						</svg>

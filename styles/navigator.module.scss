@@ -1,4 +1,4 @@
-@import url('https://cdn.jsdelivr.net/gh/uclaacm/westwood_sans/font.css');
+@import url("https://cdn.jsdelivr.net/gh/uclaacm/westwood_sans/font.css");
 
 $headerFontSize: 20px;
 
@@ -23,7 +23,7 @@ $headerFontSize: 20px;
 
 .homeLink {
 	display: flex;
-	font-family: 'Westwood Sans', sans-serif;
+	font-family: "Westwood Sans", sans-serif;
 	font-weight: 800;
 	font-size: 40px;
 	color: black;
@@ -35,7 +35,7 @@ $headerFontSize: 20px;
 .aiIcon {
 	width: 8lvh;
 	height: auto;
-	background-image: url('../public/logos/aiIcon.svg');
+	background-image: url("../public/logos/aiIcon.svg");
 	background-size: cover;
 }
 
