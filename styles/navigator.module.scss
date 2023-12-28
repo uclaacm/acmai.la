@@ -113,7 +113,7 @@ $headerFontSize: 20px;
 		display: none;
 	}
 
-	.dropDownMenuVisibpropertyle {
+	.dropDownMenuVisible {
 		display: flex;
 		flex-direction: column;
 	}
@@ -125,6 +125,7 @@ $headerFontSize: 20px;
 	}
 
 	.linkText {
+		padding: 10px;
 		line-height: 2lvh;
 		text-align: center;
 		font-weight: 500;

@@ -1,16 +1,21 @@
 .footerContainer {
 	bottom: 0;
-	height: 25lvh;
+	height: 15lvh;
 	position: relative;
-	z-index: -5;
 	display: flex;
 	justify-content: center;
 	background: linear-gradient(70deg, var(--primary), var(--gradientLight));
 }
 
+.socialContainer {
+  margin-top: 2lvh;
+  display: flex;
+  flex-direction: column;
+}
+
 .socialIconContainer {
+  display: flex;
 	position: relative;
-	top: 20%;
 	height: 50px;
 	width: auto;
 }
@@ -46,5 +51,5 @@
 
 .discordLink {
 	@extend .socialLinks;
-	width: 55px;
+	width: 54px;
 }
