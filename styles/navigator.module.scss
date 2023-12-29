@@ -30,6 +30,7 @@ $headerFontSize: 20px;
 	text-decoration: none;
 	margin-right: auto;
 	margin-left: 1lvw;
+	line-height: 7lvh;
 }
 
 .aiIcon {
@@ -40,12 +41,10 @@ $headerFontSize: 20px;
 }
 
 .acmText {
-	line-height: 7lvh;
 	margin-left: 1lvw;
 }
 
 .aiText {
-	line-height: 7lvh;
 	text-decoration: none;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
@@ -57,6 +56,26 @@ $headerFontSize: 20px;
 }
 
 @media only screen and (min-width: 800px) {
+
+// animate underline when hovering over the navigator
+.navigationContainer::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--secondaryDark);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navigationContainer:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 	.dropDownIcon {
 		display: none;
 	}
