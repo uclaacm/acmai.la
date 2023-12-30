@@ -11,7 +11,7 @@ export default function PageWrapper({
 	return (
 		<>
 			<Navigator />
-			<div className={styles.bodyContainer}></div>
+			<div className={styles.bodyContainer}>{children}</div>
 			<Footer />
 		</>
 	);
