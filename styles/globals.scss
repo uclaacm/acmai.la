@@ -1,9 +1,10 @@
 @font-face {
-  font-family: "Westwood Sans 0.5";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Westwood Sans Regular"),
-    url("../public/fonts/WestwoodSans-Regular-0.5.ttf") format("truetype");
+	font-family: "Westwood Sans 0.5";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("Westwood Sans Regular"),
+		url("../public/fonts/WestwoodSans-Regular-0.5.ttf") format("truetype");
 }
 
 * {
@@ -17,6 +18,14 @@ body {
 	height: 100%;
 	padding: 0;
 	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, a{
+	font-family: 'Poppins';
+}
+
+p {
+	font-family: 'Open Sans';
 }
 
 :root {

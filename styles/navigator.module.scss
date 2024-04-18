@@ -39,10 +39,12 @@ $headerFontSize: 20px;
 }
 
 .acmText {
+	font-family: "Westwood Sans 0.5", sans-serif;
 	margin-left: 1lvw;
 }
 
 .aiText {
+	font-family: "Westwood Sans 0.5", sans-serif;
 	text-decoration: none;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
@@ -54,25 +56,24 @@ $headerFontSize: 20px;
 }
 
 @media only screen and (min-width: 800px) {
+	// animate underline when hovering over the navigator
+	.navigationContainer::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		transform: scaleX(0);
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		background-color: var(--secondaryDark);
+		transform-origin: bottom right;
+		transition: transform 0.25s ease-out;
+	}
 
-// animate underline when hovering over the navigator
-.navigationContainer::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--secondaryDark);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.navigationContainer:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
+	.navigationContainer:hover::after {
+		transform: scaleX(1);
+		transform-origin: bottom left;
+	}
 
 	.dropDownIcon {
 		display: none;

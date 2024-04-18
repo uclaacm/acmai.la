@@ -4,17 +4,32 @@
 	position: relative;
 	display: flex;
 	justify-content: center;
-	background: linear-gradient(70deg, var(--primary), var(--gradientLight));
+  background: linear-gradient(90deg, #90e0ef, var(--primary), #90e0ef, var(--primary));
+	animation: gradient 5s linear infinite;
+  box-shadow: 0 1px 20px #90e0ef80;
+	background-size: 300% auto;
+
+	// background: linear-gradient(70deg, var(--primary), var(--gradientLight));
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0%;
+	}
+	100% {
+		background-position: 100% ;
+	}
+}
+
+
 .socialContainer {
-  margin-top: 2lvh;
-  display: flex;
-  flex-direction: column;
+	margin-top: 2lvh;
+	display: flex;
+	flex-direction: column;
 }
 
 .socialIconContainer {
-  display: flex;
+	display: flex;
 	position: relative;
 	height: 50px;
 	width: auto;
