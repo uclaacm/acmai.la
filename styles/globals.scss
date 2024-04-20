@@ -21,11 +21,17 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, a{
-	font-family: 'Poppins';
+	font-family: "Poppins", sans-serif;
 }
 
 p {
 	font-family: 'Open Sans';
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
 }
 
 :root {
