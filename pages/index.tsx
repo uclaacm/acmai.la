@@ -4,10 +4,12 @@ export default function Page() {
 	return (
 		<>
 			<div className={styles.welcomeContainer}>
+				<div className={styles.diamondBackground}>
+					<div className={styles.diamond}></div>
+				</div>
 				<div className={styles.welcomeTextContainer}>
 					<h1>Welcome to</h1>
 					<div className={styles.logoContainer}>
-						<span className={styles.aiIcon} />
 						<p className={styles.acmText}>acm.</p>
 						<p className={styles.aiText}>ai</p>
 						<p className={styles.bangText}>!</p>
@@ -19,9 +21,6 @@ export default function Page() {
 						<br />
 						:)
 					</h4>
-				</div>
-				<div className={styles.diamondBackground}>
-					<div className={styles.diamond}></div>
 				</div>
 			</div>
 		</>
