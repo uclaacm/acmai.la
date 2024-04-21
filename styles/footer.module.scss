@@ -4,9 +4,15 @@
 	position: relative;
 	display: flex;
 	justify-content: center;
-  background: linear-gradient(90deg, #90e0ef, var(--primary), #90e0ef, var(--primary));
+	background: linear-gradient(
+		90deg,
+		#90e0ef,
+		var(--primary),
+		#90e0ef,
+		var(--primary)
+	);
 	animation: gradient 5s linear infinite;
-  box-shadow: 0 1px 20px #90e0ef80;
+	box-shadow: 0 1px 20px #90e0ef80;
 	background-size: 300% auto;
 }
 
@@ -15,10 +21,9 @@
 		background-position: 0%;
 	}
 	100% {
-		background-position: 100% ;
+		background-position: 100%;
 	}
 }
-
 
 .socialContainer {
 	margin-top: 2lvh;

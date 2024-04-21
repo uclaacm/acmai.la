@@ -9,13 +9,13 @@ $headerFontSize: 20px;
 
 .headerContainer {
 	width: 100lvw;
-	height: 8lvh;
+	height: var(--navigatorHeight);
 	background: white;
 	box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
 
 	width: 100%;
 	text-align: center;
-	line-height: 8lvh;
+	line-height: var(--navigatorHeight);
 	display: flex;
 	justify-content: space-between;
 }
