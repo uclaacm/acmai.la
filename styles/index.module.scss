@@ -1,42 +1,37 @@
-// thank u ACM Cyber
-// https://github.com/uclaacm/acmcyber.com
-
+// thank you #probablyanasian
 .stackContainer {
-  position: relative;
-		width: 100vw;
-		height: 100vh;
-		max-width:100%;
-		overflow: hidden;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	max-width: 100%;
+	overflow: hidden;
 }
 
 .windowContainer {
-  position: absolute;
-  clip: rect(0, auto, auto, 0);
-  width: 100vw;
-  height: 100vh;
+	position: absolute;
+	clip-path: inset(0px 0px 0px 0px);
+	width: 100vw;
+	height: 100vh;
 }
 
 .pageContainer {
 	display: flex;
-  position: fixed;
-  top: var(--navigatorHeight);
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+	position: fixed;
+	top: var(--navigatorHeight);
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
-.whatDoWeDo {
-	@extend .pageContainer;
-	background-color: purple;
-}
-
-.next {
-	@extend .pageContainer;
-	background-color: white;
-}
-
+// thank u ACM Cyber
+// https://github.com/uclaacm/acmcyber.com
 .welcomeContainer {
-	@extend .pageContainer;
+  @extend .pageContainer;
+  
+  background-image: url(../public/homeAssets/page1.svg);
 
 	--welcome-height: calc(100vh - 60px);
 	--diamond-scale: 0.65;
@@ -133,4 +128,78 @@
 			}
 		}
 	}
+}
+
+.bigText {
+  font-size: 60px;
+}
+
+.pageTwoContainer {
+	@extend .pageContainer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../public/homeAssets/page2Mobile.svg);
+}
+
+@media only screen and (min-width: 800px) {
+  .pageTwoContainer {
+    @extend .pageContainer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../public/homeAssets/page2Desktop.svg);
+  }
+}
+
+.pageThreeContainer {
+	@extend .pageContainer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../public/homeAssets/page3.svg);
+}
+
+.pageFourContainer {
+	@extend .pageContainer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../public/homeAssets/page4.svg);
+}
+
+.triangleContainer {
+  position: relative;
+  margin: 0 auto 8rem;
+  padding: 2rem;
+  height: 100%;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    z-index: 99;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  .triangleContent {
+    margin: 0 auto;
+    max-width: 700px;
+  }line-height: 2 ;
+
+  .triangleTitle{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 4%;
+  }
+
+  .pageFourText{
+    font-size: 1.2rem;
+    line-height: 2 ;
+  }
 }
