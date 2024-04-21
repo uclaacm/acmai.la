@@ -4,7 +4,7 @@ export default function Page() {
 	return (
 		<>
 			{/* page one */}
-			<div className={styles.stackContainer}>
+			<div id="welcome" className={styles.stackContainer}>
 				<div className={styles.windowContainer}>
 					<div className={styles.welcomeContainer}>
 						<div className={styles.diamondBackground}>
@@ -59,7 +59,7 @@ export default function Page() {
 			</div>
 
 			{/* triangle page */}
-			<div className={styles.triangleContainer}>
+			<div id="who_we_are" className={styles.triangleContainer}>
 				<div className={styles.triangleContent}>
 					<h1 className={styles.triangleTitle}>Who We Are</h1>
 					<p className={styles.triangleText}>

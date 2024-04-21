@@ -132,6 +132,7 @@
 
 .bigText {
   font-size: 60px;
+  text-align: center;
 }
 
 .pageTwoContainer {
@@ -142,6 +143,14 @@
   background-image: url(../public/homeAssets/page2Mobile.svg);
 }
 
+.pageThreeContainer {
+	@extend .pageContainer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../public/homeAssets/page3Mobile.svg);
+}
+
 @media only screen and (min-width: 800px) {
   .pageTwoContainer {
     @extend .pageContainer;
@@ -150,14 +159,14 @@
     align-items: center;
     background-image: url(../public/homeAssets/page2Desktop.svg);
   }
-}
 
-.pageThreeContainer {
-	@extend .pageContainer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../public/homeAssets/page3.svg);
+  .pageThreeContainer {
+    @extend .pageContainer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../public/homeAssets/page3Desktop.svg);
+  }
 }
 
 .pageFourContainer {
