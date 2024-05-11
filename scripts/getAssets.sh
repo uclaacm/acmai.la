@@ -2,9 +2,11 @@
 set -e
 
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-venv="$script_dir/../python/gdown_venv"
-profile_folder="$script_dir/../public/members"
+venv="$script_dir/../python/assets_venv"
+data_folder="$script_dir/../public/members"
 drive_folder="https://drive.google.com/drive/folders/1eBPjmsgQiI7bEOc7HHtliKtORlfrWOU7?usp=drive_link"
+
+meta_data="$data_folder/image_meta_data"
 
 if command -v python3 &> /dev/null; then
   python3 -m venv $venv
@@ -21,20 +23,20 @@ if ! pip show gdown >/dev/null 2>&1; then
   pip install gdown
 fi
 
-if [ -d "$profile_folder" ]; then
-  rm -r $profile_folder
+if [ -d "$data_folder" ]; then
+  rm -r $data_folder
 fi
-gdown $drive_folder -O $profile_folder --folder
+gdown $drive_folder -O $data_folder --folder
 
 
 # convert the images to smaller resolution webp
 # thank you acm cyber
-for image in $profile_folder/*.{jpg,jpeg,png,webp}; do
+for image in $data_folder/*.{jpg,jpeg,png,webp}; do
   if [ -f "$image" ]; then
     filename=$(basename -- "$image")
     extension="${filename##*.}"
     filename_no_ext="${filename%.*}"
-    out=$profile_folder/$filename_no_ext.webp
+    out=$data_folder/$filename_no_ext.webp
 
     convert "$image" -resize '400x400^'  -gravity center -crop 400x400+0+0 +repage "$out"
     if [ "$extension" != "webp" ]; then
@@ -43,3 +45,18 @@ for image in $profile_folder/*.{jpg,jpeg,png,webp}; do
     echo "$filename"
   fi
 done
+
+if ! pip show pandas >/dev/null 2>&1; then
+  pip install pandas
+fi
+if ! pip show openpyxl >/dev/null 2>&1; then
+  pip install openpyxl
+fi
+
+if command -v python3 &> /dev/null; then
+  python3 $script_dir/../python/xlsx_to_json.py $meta_data $meta_data.json
+else
+  python $script_dir/../python/xlsx_to_json.py $meta_data $meta_data.json
+fi
+
+rm $meta_data

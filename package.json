@@ -11,7 +11,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"get_assets": "bash $PWD/scripts/downloadProfiles.sh",
+		"get_assets": "bash $PWD/scripts/getAssets.sh",
 		"lint": "eslint . --fix --max-warnings=0",
 		"format": "prettier . --write",
 		"postinstall": "husky install"
@@ -37,7 +37,6 @@
 		"husky": "^8.0.0",
 		"lint-staged": "15.2.0",
 		"prettier": "3.1.1",
-		"read-excel-file": "5.8.1",
 		"sass": "1.69.5",
 		"typescript": "5.3.3"
 	},
