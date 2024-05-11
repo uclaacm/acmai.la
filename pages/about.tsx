@@ -1,3 +1,7 @@
 export default function About() {
-	return <></>;
+	return (
+		<>
+			<h1>Members</h1>
+		</>
+	);
 }
