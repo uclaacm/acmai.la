@@ -15,6 +15,7 @@ export default function MetaData({
 			<meta name="description" content={description} />
 			{/* End standard metadata tags */}
 			{/* Facebook tags */}
+			<meta name="og:site_name" content="ACM AI" />
 			<meta property="og:type" content="Page" />
 			<meta property="og:title" content={title} />
 			<meta property="og:description" content={description} />
