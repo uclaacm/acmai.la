@@ -1,26 +1,26 @@
-.memberContainer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 500px;
-  width: 300px;
-  text-align: center;
-  margin: .5rem 2rem;
+.memberContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 500px;
+	width: 300px;
+	text-align: center;
+	margin: 0.5rem 2rem;
 
-  .picture {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%; 
-    margin-bottom: 1rem;
-  }
+	.picture {
+		height: 200px;
+		width: 200px;
+		border-radius: 50%;
+		margin-bottom: 1rem;
+	}
 
-  .name {
-    width: fit-content;
-    font-size: 25px;
-    color: var(--primary);
-  }
+	.name {
+		width: fit-content;
+		font-size: 25px;
+		color: var(--primary);
+	}
 
-  .text {
-    font-size: 1.125rem;
-  }
+	.text {
+		font-size: 1.125rem;
+	}
 }
