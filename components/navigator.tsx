@@ -30,8 +30,11 @@ export default function Navigator() {
 
 	let basicLinks = (
 		<>
-			<Link href="/about" className={styles.linkText} onClick={toggleAnimation}>
-				ABOUT
+			<Link
+				href="/members"
+				className={styles.linkText}
+				onClick={toggleAnimation}>
+				MEMBERS
 			</Link>
 			<Link
 				href="/events"
