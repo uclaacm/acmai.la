@@ -1,13 +1,11 @@
 import styles from "@/styles/index.module.scss";
-import MetaData from "@/components/metaData";
+import Metadata from "@/components/metadata";
 
 export default function Page() {
 	return (
 		<>
-			<MetaData
-				title="Home | ACM AI at UCLA"
-				description="A student run organization dedicated to making AI fun and easy to learn!"
-			/>
+			<Metadata title="Home" />
+
 			{/* page one */}
 			<div id="welcome" className={styles.stackContainer}>
 				<div className={styles.windowContainer}>

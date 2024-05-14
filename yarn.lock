@@ -332,15 +332,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-helmet@npm:^6":
-  version: 6.1.11
-  resolution: "@types/react-helmet@npm:6.1.11"
-  dependencies:
-    "@types/react": "npm:*"
-  checksum: f7b3bb2151d992a108ae46fed876fb9c8119108397d9a01d150c5642782997542c8b3c52e742b56e8689b7dbfa62ca9cfc76aa7e05dec4e60c652f7ef53fa783
-  languageName: node
-  linkType: hard
-
 "@types/react@npm:*, @types/react@npm:^18.2.45":
   version: 18.2.45
   resolution: "@types/react@npm:18.2.45"
@@ -520,7 +511,6 @@ __metadata:
     "@types/prettier": "npm:^3.0.0"
     "@types/react": "npm:^18.2.45"
     "@types/react-dom": "npm:^18"
-    "@types/react-helmet": "npm:^6"
     "@types/sass": "npm:^1.45.0"
     "@typescript-eslint/eslint-plugin": "npm:^6.15.0"
     "@typescript-eslint/parser": "npm:^6.15.0"
@@ -531,10 +521,10 @@ __metadata:
     husky: "npm:^8.0.0"
     lint-staged: "npm:15.2.0"
     next: "npm:14.0.4"
+    next-seo: "npm:6.5.0"
     prettier: "npm:3.1.1"
     react: "npm:^18"
     react-dom: "npm:^18"
-    react-helmet: "npm:6.1.0"
     sass: "npm:1.69.5"
     typescript: "npm:5.3.3"
   languageName: unknown
@@ -2996,6 +2986,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-seo@npm:6.5.0":
+  version: 6.5.0
+  resolution: "next-seo@npm:6.5.0"
+  peerDependencies:
+    next: ^8.1.1-canary.54 || >=9.0.0
+    react: ">=16.0.0"
+    react-dom: ">=16.0.0"
+  checksum: f2403356aa7fa91314fb91f9b1f7a3436ff76307e2345faec67132e8c0546312f4c6262bc10db28339612c1777dc07ba566bd407262d662f2e417932563837a6
+  languageName: node
+  linkType: hard
+
 "next@npm:14.0.4":
   version: 14.0.4
   resolution: "next@npm:14.0.4"
@@ -3413,7 +3414,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -3450,40 +3451,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-fast-compare@npm:^3.1.1":
-  version: 3.2.2
-  resolution: "react-fast-compare@npm:3.2.2"
-  checksum: 0bbd2f3eb41ab2ff7380daaa55105db698d965c396df73e6874831dbafec8c4b5b08ba36ff09df01526caa3c61595247e3269558c284e37646241cba2b90a367
-  languageName: node
-  linkType: hard
-
-"react-helmet@npm:6.1.0":
-  version: 6.1.0
-  resolution: "react-helmet@npm:6.1.0"
-  dependencies:
-    object-assign: "npm:^4.1.1"
-    prop-types: "npm:^15.7.2"
-    react-fast-compare: "npm:^3.1.1"
-    react-side-effect: "npm:^2.1.0"
-  peerDependencies:
-    react: ">=16.3.0"
-  checksum: 1d2831d9c3b4f5c91f020076aeb6502437a4788077d0c438421e466eb9633d5dc2aacedf7b779a970b807d61cf87793c5ff76ee3190a185d71c90b5cfb367e96
-  languageName: node
-  linkType: hard
-
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 33977da7a5f1a287936a0c85639fec6ca74f4f15ef1e59a6bc20338fc73dc69555381e211f7a3529b8150a1f71e4225525b41b60b52965bda53ce7d47377ada1
-  languageName: node
-  linkType: hard
-
-"react-side-effect@npm:^2.1.0":
-  version: 2.1.2
-  resolution: "react-side-effect@npm:2.1.2"
-  peerDependencies:
-    react: ^16.3.0 || ^17.0.0 || ^18.0.0
-  checksum: 5d934cae438f701ce646f566750ae6a445e99185ce1a026108f9db728147f7962a22ecf8db79ff26089953a3799b3607766904f4f10194ce42bcd5a1aa0215e8
   languageName: node
   linkType: hard
 
