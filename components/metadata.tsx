@@ -12,7 +12,7 @@ export default function Metadata({
 }) {
 	return (
 		<NextSeo
-			title={title + " @ ACM AI at UCLA"}
+			title={title + " - ACM AI at UCLA"}
 			description={
 				description ??
 				"We are a club at UCLA dedicated to making engineering and research in AI easy, accessiable, and fun for all!"

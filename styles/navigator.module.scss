@@ -1,4 +1,5 @@
 $headerFontSize: 20px;
+$phoneWidth: 800px;
 
 .navigationContainer {
 	top: 0;
@@ -56,7 +57,7 @@ $headerFontSize: 20px;
 	);
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: $phoneWidth) {
 	// animate underline when hovering over the navigator
 	.navigationContainer::after {
 		content: "";
