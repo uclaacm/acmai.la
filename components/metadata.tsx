@@ -12,15 +12,19 @@ export default function Metadata({
 }) {
 	return (
 		<NextSeo
-			title={`${title} @ ACM AI at UCLA`}
-			description={description ?? "Leon puts the L in Machine Leonerning"}
+			title={"${title} @ ACM AI at UCLA"}
+			description={
+				description ??
+				"We are a club at UCLA dedicated to making engineering and research in AI easy, accessiable, and fun for all!"
+			}
 			openGraph={{
+				type: "website",
 				images: images ?? [
 					{
 						url: "https://uclaacm.github.io/ai.uclaacm.com/logos/ai_motif_applied_2.png",
 						width: 990,
 						height: 555,
-						alt: "ACM AI logo",
+						alt: "ACM AI motif",
 					},
 				],
 				site_name: "ACM AI at UCLA",
