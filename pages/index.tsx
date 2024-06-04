@@ -16,17 +16,17 @@ export default function Page() {
 						<div className={styles.welcomeTextContainer}>
 							<h1>Welcome to</h1>
 							<div className={styles.logoContainer}>
-								<p className={styles.acmText}>acm.</p>
-								<p className={styles.aiText}>ai</p>
-								<p className={styles.bangText}>!</p>
+								<h1 className={styles.acmText}>acm.</h1>
+								<h1 className={styles.aiText}>ai</h1>
+								<h1 className={styles.bangText}>!</h1>
 							</div>
-							<h4>
+							<h2>
 								Leon puts the L in
 								<br />
 								Machine Leonrning
 								<br />
 								:)
-							</h4>
+							</h2>
 						</div>
 					</div>
 				</div>

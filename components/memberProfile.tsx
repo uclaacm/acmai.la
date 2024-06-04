@@ -15,7 +15,11 @@ export default function MemeberProfile({
 }) {
 	return (
 		<div className={styles.memberContainer}>
-			<img src={picture} className={styles.picture} alt="member picture" />
+			<img
+				src={picture}
+				className={styles.picture}
+				alt={"Profile picture of " + name + " who is a " + role + " in ACM AI."}
+			/>
 			<h1 className={styles.name}>{name}</h1>
 			<p className={styles.text}>{pronouns}</p>
 			<p className={styles.text}>

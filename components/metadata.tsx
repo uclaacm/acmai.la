@@ -12,7 +12,7 @@ export default function Metadata({
 }) {
 	return (
 		<NextSeo
-			title={title + " - ACM AI at UCLA"}
+			title={title + " | ACM AI at UCLA"}
 			description={
 				description ??
 				"We are a club at UCLA dedicated to making engineering and research in AI easy, accessiable, and fun for all!"
@@ -21,7 +21,7 @@ export default function Metadata({
 				type: "website",
 				images: images ?? [
 					{
-						url: "https://uclaacm.github.io/ai.uclaacm.com/logos/ai_motif_applied_2.png",
+						url: "https://uclaacm.github.io/acmai.la/logos/ai_motif_applied_2.png",
 						width: 990,
 						height: 555,
 						alt: "ACM AI motif",

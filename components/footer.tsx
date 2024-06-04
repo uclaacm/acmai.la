@@ -11,7 +11,10 @@ export default function Footer() {
 							href="https://discord.com/invite/QcU9AVW9hm"
 							target="_blank"
 							className={styles.discordLink}>
-							<svg className={styles.discordIcon}>
+							<svg
+								className={styles.discordIcon}
+								role="link"
+								aria-label="Click on this for a link to join ACM AI's Discord server">
 								<use href="sprites.svg#discordIcon" />
 							</svg>
 						</a>
