@@ -4,7 +4,7 @@ import Metadata from "@/components/metadata";
 export default function Page() {
 	return (
 		<>
-			<Metadata title="Home" />
+			<Metadata title="Home" pageName="" />
 
 			{/* page one */}
 			<div id="welcome" className={styles.stackContainer}>

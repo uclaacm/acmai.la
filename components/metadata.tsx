@@ -3,10 +3,12 @@ import { OpenGraphMedia } from "next-seo/lib/types";
 
 export default function Metadata({
 	title,
+	pageName,
 	description,
 	images,
 }: {
 	title: string;
+	pageName: string;
 	description?: string;
 	images?: OpenGraphMedia[];
 }) {
@@ -17,6 +19,7 @@ export default function Metadata({
 				description ??
 				"We are a club at UCLA dedicated to making engineering and research in AI easy, accessiable, and fun for all!"
 			}
+			canonical={"https://www.acmai.la/" + pageName}
 			openGraph={{
 				type: "website",
 				images: images ?? [
