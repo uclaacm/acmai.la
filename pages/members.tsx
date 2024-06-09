@@ -6,7 +6,11 @@ import Metadata from "@/components/metadata";
 export default function Members() {
 	return (
 		<>
-			<Metadata title="Members" description="Check out our members!" />
+			<Metadata
+				title="Members"
+				description="Check out our members!"
+				pageName="members"
+			/>
 
 			<div className={styles.content}>
 				<h1 className={styles.title}>Members</h1>
